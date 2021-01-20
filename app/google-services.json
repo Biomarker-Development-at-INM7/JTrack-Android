@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1091930865733",
+    "firebase_url": "https://jutrack-social-notification.firebaseio.com",
+    "project_id": "jutrack-social-notification",
+    "storage_bucket": "jutrack-social-notification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091930865733:android:a90c97d5c6e5f6edf2a32c",
+        "android_client_info": {
+          "package_name": "inm7.Jutrack.jutrack_Social"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091930865733-erm67n087ub5ueooo2gph2kmv40qk978.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKabcjgdOdb2BabFuqc8_mRMDM8FkXYjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091930865733-erm67n087ub5ueooo2gph2kmv40qk978.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

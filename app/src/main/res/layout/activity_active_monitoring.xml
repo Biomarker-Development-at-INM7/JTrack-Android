@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_active_monitoring"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imageViewReset"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textViewTime"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/icon_reset"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageViewStartStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:src="@drawable/icon_start" />
+
+    <ProgressBar
+        android:id="@+id/progressBarCircle"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_above="@+id/imageViewStartStop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/drawable_circle_yellow"
+        android:rotation="-90" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/progressBarCircle"
+        android:layout_alignBottom="@+id/progressBarCircle"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="94dp"
+        android:layout_marginBottom="95dp"
+        android:text="00:00:00"
+        android:textColor="@color/colorLightBlue"
+        android:textSize="38sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#03A9F4"
+        app:hintTextColor="#00BCD4"></com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/imageButtonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBarCircle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="46dp"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <TextView
+        android:id="@+id/textViewTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBarCircle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="46dp"
+        android:layout_toEndOf="@+id/imageButtonAdd"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Bitte geben Sie die Aktivität an"
+        android:textAlignment="textStart"
+        android:textColor="#15AFCA"
+        android:textColorHint="#15AFCA"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

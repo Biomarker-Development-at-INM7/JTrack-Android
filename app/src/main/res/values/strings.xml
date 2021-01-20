@@ -1,0 +1,186 @@
+<resources>
+    <string name="app_name">JuTrack Social</string>
+    <string name="title_activity_settings">Einstellungen</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">Allgemein</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Startet alle Services neu</string>
+    <string name="pref_description_Manual_ActiveLabeling">Manual Active Labeling</string>
+    <string name="pref_description_MovementDetection">detect steady or active stage to start or stop services</string>
+
+    <string name="pref_title_display_name">Teilnehmernummer</string>
+    <string name="pref_default_display_name">Ju Track</string>
+
+    <string name="pref_record_rate">Aufnahmefrequenz</string>
+
+    <string name="Acceleration_service_started">Beschleunigungsdienst gestartet</string>
+    <string name="Acceleration_service_stopped">Beschleunigungsdienst angehalten</string>
+    <string name="Accelerometer">Beschleunigungsmesser</string>
+    <string name="Gyroscope_sensor_started">Gyroskop-Sensor gestartet</string>
+    <string name="Gyroscope_sensor_stopped">Gyroskopsensor gestoppt</string>
+    <string name="Gyroscope">Gyroskopsensor</string>
+
+
+    <string-array name="pref_record_rate_list">
+        <item>200 Hz</item>
+        <item>100 Hz</item>
+        <item>50 Hz</item>
+        <item>20 Hz</item>
+        <item>10 Hz</item>
+
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>20000</item>
+        <item>10000</item>
+        <item>5000</item>
+        <item>2000</item>
+        <item>1000</item>
+    </string-array>
+
+    <!--  menue -->
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_about">Info</string>
+    <string name="action_leave_study">Studie verlassen</string>
+    <string name="manual_sync">Manual Sync</string>
+
+    <!-- Example settings for Account -->
+    <string name="pref_header_account">Account</string>
+
+    <string name="pref_title_account">Market</string>
+    <string-array name="pref_market_titles">
+        <item>United States</item>
+        <item>Canada</item>
+        <item>United Kingdom</item>
+        <item>India</item>
+        <item>Japan</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="pref_market_values">
+        <item>US</item>
+        <item>CA</item>
+        <item>UK</item>
+        <item>IN</item>
+        <item>JA0</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_account_settings">Account settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
+
+
+
+    <string name="AccelerationSensordb">AccelerationSensor-db</string>
+    <string name="AccelerationSensortd">AccelerationSensor-td</string>
+    <string name="AccelerationSensor">sensors</string>
+
+
+    // notification
+    <string name="noti_channel_default">Primary Channel</string>
+    <string name="mainServiceNotificationText">Die App Jutrack läuft im Hintergrund </string>
+    <string name="BackgroundNotificationText">Der Aufzeichnungsservice für Jutrack läuft im Hintergrund</string>
+
+
+
+    <!-- OnBoard Screen. -->
+
+    <string name="ob_header1">Willkommen zu JuTrack Social</string>
+    <string name="ob_header2">Willkommen zu JuTrack Social</string>
+    <string name="ob_header3">Willkommen zu JuTrack Social</string>
+    <string name="ob_get_started">An Einer Studie Teilnehmen</string>
+
+    <string name="ob_desc1"></string>
+    <string name="ob_desc2">Willkommen zu JuTrack SocialL</string>
+    <string name="ob_desc3">Willkommen zu JuTrack Social</string>
+
+
+
+    <!-- Yes Or No dialog. -->
+
+    <string name="DialogText">Sind Sie sicher?</string>
+    <string name="DailogTitle">Studie verlassen</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="yes">Ja</string>
+
+    <!-- Admin Login dialog. -->
+    <string name="adminPanelTitle">Administratoreinstellungen</string>
+    <string name="adminPanelText">Sie brauchen ein Passwort für Zugang zu den Administratoreinstellungen</string>
+    <string name="adminPanelOk">OK</string>
+    <string name="adminPanelCancel">Abbrechen</string>
+
+    <!-- Internet check dialog. -->
+    <string name="InternetPanelTitle">Internetstatus</string>
+    <string name="InternetPanelTextJoin">Sie brauchen eine Internetverbindung um sich für die Studie anzumelden</string>
+    <string name="InternetPanelTextLeave">Sie brauchen eine Internetverbindung um sich von der Studie abzumelden</string>
+    <string name="InternetPanelOk">OK</string>
+    <string name="InternetPanelCancel">Abbrechen</string>
+
+
+    <!-- User Create dialog. -->
+    <string name="UserCreateTitle">Bitte warten</string>
+    <string name="UserCreateText">Wir erstellen einen neuen Benutzer</string>
+
+    <!-- User leave dialog. -->
+    <string name="UserLeaveTitle">Bitte warten</string>
+    <string name="UserLeaveText">Sie haben die Studie erfolgreich verlassen und können die App nun deinstallieren</string>
+
+    <!-- QR code . -->
+    <string name="QrcodeText">Bitte den Barcode innerhalb von einer Minute einscannen</string>
+    <string name="BTN_retry">Wiederholen Sie!</string>
+
+
+
+    <string name="Crash_restart_msg">Neustart nach Absturz!</string>
+    <string name="Manual_Sync_Ok">Datenbank ist synchronisiert </string>
+    <string name="Manual_Sync_Error">Datenbank ist synchronisiert </string>
+    <string name="Permissions_check_Ok">Genehmigungen: Erfolg  </string>
+    <string name="Permissions_check_Error">bitte erlauben Sie Jutrack Zugang zu Nutzungsinformationen</string>
+    <string name="Protected_Apps_title"> Überspringen der Batterie-Optimierung</string>
+    <string name="Protected_Apps_msg"> Bitte schalten Sie die Batterieoptimierung für Jutrack auf manuell</string>
+    <string name="Protected_Apps_btn"> Gehe zu Einstellung</string>
+    <string name="User_Exist_Error">Dieser Benutzer existiert bereits, versuchen Sie es mit neuem Qr-Code. </string>
+    <string name="User_Server_Error">Es gibt ein Problem Bitte versuchen Sie es erneut.</string>
+
+    <string name="Location_request_head">Anfrage für Standort</string>
+    <string name="Location_request_body">Tippen Sie auf um den Standort zu aktivieren</string>
+
+    <string name="Location_rservice_stopepd">Standort Dienst eingestellt</string>
+    <string name="Location_rservice_started">Standortdienst gestartet</string>
+
+    <string name="Main_rservice_started">Hauptdienst gestartet</string>
+    <string name="Main_rservice_stopped">Hauptdienst eingestellt</string>
+    <string name="Main_rservice_ReStart">Der Hauptdienst wird wieder aufgenommen</string>
+
+    <string name="Activity_rservice_Start">Aktivitätserkennungsdienst gestartet</string>
+    <string name="Activity_rservice_Stopped">Aktivitätserkennungsdienst eingestellt</string>
+
+
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="inm7.Jutrack.jutrack_Social.AboutActivity">
+
+
+    <LinearLayout
+        android:id="@+id/textInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#F0FFFFFF"
+        android:orientation="vertical"
+        android:padding="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+
+            android:id="@+id/versionTXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Version:2.2.0"
+            android:textSize="@dimen/info_text" />
+
+
+        <TextView
+            android:id="@+id/about_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:text="Die App „JuTrack Social“ sammelt im Verlauf von klinischen Studien vollkommen anonymisierte Daten zu der Benutzung Ihres Smartphones im Alltag (Anzahl und Dauer von Anrufen und Mitteilungen, Art und Menge von Bewegungsaktivitäten, Appnutzungsverhalten). Diese Daten sollen dabei helfen objektive und zuverlässige Früherkennungszeichen für die Entwicklung und Verlaufsbeobachtung von Depressionen zu identifizieren."
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/info_text" />
+
+        <TextView
+            android:id="@+id/studyInfo_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="link to page"
+            android:textSize="@dimen/info_text" />
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

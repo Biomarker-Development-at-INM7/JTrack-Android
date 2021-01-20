@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <AutoCompleteTextView
+        android:id="@+id/dialog_task_autoTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Aktivität eingeben"
+        android:textColor="#00BCD4" />
+
+    <EditText
+        android:id="@+id/dialog_durationTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Dauer in Sekunden (optional)"
+        android:inputType="number"
+        android:singleLine="false"
+        android:textColor="#00BCD4" />
+
+    <Switch
+        android:id="@+id/Switch_voice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Audio aufzeichnen">
+
+    </Switch>
+</LinearLayout>
