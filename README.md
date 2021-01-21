@@ -1,7 +1,7 @@
 ﻿# Welcome to JuTrack Platfrom!
 
 
-
+![JuTrack Platform Overview](https://github.com/mehransahandi/JuTrack_docs/blob/master/docs/source/image/logo-social.png)
 
 Hi! This is the repository for JuTrack smartphone application. JuTrack is an open-source platform for remote assessment of digital biomarkers (DB) in neurological, psychiatric and other indications. JuTrack platform consists of an **Android application** and an online **Dashboard** for managing research studies.
 
