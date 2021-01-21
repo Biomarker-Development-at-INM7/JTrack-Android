@@ -30,6 +30,7 @@ import androidx.core.content.ContextCompat;
 
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -228,7 +229,8 @@ public class ActiveMonitoringActivity extends AppCompatActivity implements View.
             }
 
 
-        } else {
+        }
+        else {
 
             // hiding the reset icon
             imageViewReset.setVisibility(View.GONE);
@@ -240,6 +242,10 @@ public class ActiveMonitoringActivity extends AppCompatActivity implements View.
             getTimeofTask(System.currentTimeMillis(),0);
             //voice
             task_name_label="";
+            // play bip
+            ToneGenerator toneGen1 = new ToneGenerator(AudioManager.STREAM_MUSIC, 100);
+            toneGen1.startTone(ToneGenerator.TONE_CDMA_PIP,150);
+
             if (record_voice_label){
                 voiceRecord.stop_record();
             }
@@ -360,7 +366,8 @@ public class ActiveMonitoringActivity extends AppCompatActivity implements View.
 
             }
 
-        }.start();
+        };
+
         countDownTimer.start();
 
 
