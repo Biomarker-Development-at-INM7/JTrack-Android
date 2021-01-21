@@ -22,7 +22,7 @@
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".ActiveMonitoring.ActiveMonitoringActivity"
+            android:name=".ActiveLabeling.ActiveLabelingActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity

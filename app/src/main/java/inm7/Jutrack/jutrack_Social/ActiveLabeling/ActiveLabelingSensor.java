@@ -11,7 +11,7 @@
  See the License for the specific language governing permissions and limitations under the License.
 
  **/
-package inm7.Jutrack.jutrack_Social.ActiveMonitoring;
+package inm7.Jutrack.jutrack_Social.ActiveLabeling;
 
 import androidx.room.Entity;
 

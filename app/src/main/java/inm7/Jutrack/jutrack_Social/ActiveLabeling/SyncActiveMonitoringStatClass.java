@@ -11,7 +11,7 @@
  See the License for the specific language governing permissions and limitations under the License.
 
  **/
-package inm7.Jutrack.jutrack_Social.ActiveMonitoring;
+package inm7.Jutrack.jutrack_Social.ActiveLabeling;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -27,9 +27,6 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
-import inm7.Jutrack.jutrack_Social.AppUsageStatSensor.AppUsageStatSenorsAppDatabase;
-import inm7.Jutrack.jutrack_Social.AppUsageStatSensor.AppUsageStatSensor;
-import inm7.Jutrack.jutrack_Social.AppUsageStatSensor.GetAppUsageStatSensorsDataAsyc;
 import inm7.Jutrack.jutrack_Social.Constants;
 import inm7.Jutrack.jutrack_Social.MyGlobalClass;
 import inm7.Jutrack.jutrack_Social.Serverinterface;

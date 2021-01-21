@@ -45,8 +45,10 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import inm7.Jutrack.jutrack_Social.AccelerationSensor.AccelerationService;
+import inm7.Jutrack.jutrack_Social.AccelerationSensor.SyncAccelerationClass;
 import inm7.Jutrack.jutrack_Social.AccelerationSensor.SyncAccelerationJobService;
-import inm7.Jutrack.jutrack_Social.ActiveMonitoring.SyncActiveMonitoringJobService;
+import inm7.Jutrack.jutrack_Social.ActiveLabeling.SyncActiveMonitoringJobService;
+import inm7.Jutrack.jutrack_Social.ActiveLabeling.SyncActiveMonitoringStatClass;
 import inm7.Jutrack.jutrack_Social.AppUsageStatSensor.AppUsageStatsJobService;
 import inm7.Jutrack.jutrack_Social.AppUsageStatSensor.SyncAppUsageStatClass;
 import inm7.Jutrack.jutrack_Social.AppUsageStatSensor.SyncAppUsageStatJobService;
@@ -54,6 +56,7 @@ import inm7.Jutrack.jutrack_Social.DetectedActivitySensor.BackgroundDetectedActi
 import inm7.Jutrack.jutrack_Social.DetectedActivitySensor.SyncActivityClass;
 import inm7.Jutrack.jutrack_Social.DetectedActivitySensor.SyncActivityJobService;
 import inm7.Jutrack.jutrack_Social.GyroscopeSensor.GyroscopeService;
+import inm7.Jutrack.jutrack_Social.GyroscopeSensor.SyncGyroscopeClass;
 import inm7.Jutrack.jutrack_Social.GyroscopeSensor.SyncGyroscopeJobService;
 import inm7.Jutrack.jutrack_Social.LocationSensor.LocationUpdatesService;
 import inm7.Jutrack.jutrack_Social.LocationSensor.SyncLocationClass;
@@ -764,8 +767,19 @@ public class MyGlobalClass {
         syncLocationClass.syncOnBackGround();
         boolean LocationJobCanceled = syncLocationClass.jobCancelled;
 
+        SyncAccelerationClass syncAccelerationClass = new SyncAccelerationClass(mContext.getApplicationContext(),0);
+        syncAccelerationClass.syncOnBackGround();
+        boolean AccelerationJobCanceled = syncAccelerationClass.jobCancelled;
 
-        return LocationJobCanceled || ActivityJobCanceled || AppUsageJobCanceled;
+        SyncGyroscopeClass syncGyroscopeClass = new SyncGyroscopeClass(mContext.getApplicationContext(),0);
+        syncGyroscopeClass.syncOnBackGround();
+        boolean GyroscopeJobCanceled= syncGyroscopeClass.jobCancelled;
+
+        SyncActiveMonitoringStatClass syncActiveMonitoringStatClass = new SyncActiveMonitoringStatClass(mContext.getApplicationContext(),0);
+        syncActiveMonitoringStatClass.syncOnBackGround();
+        boolean ActiveMonitoringJobCanceled = syncActiveMonitoringStatClass.jobCancelled;
+
+        return LocationJobCanceled || ActivityJobCanceled || AppUsageJobCanceled || AccelerationJobCanceled || GyroscopeJobCanceled || AccelerationJobCanceled;
 
     }
 

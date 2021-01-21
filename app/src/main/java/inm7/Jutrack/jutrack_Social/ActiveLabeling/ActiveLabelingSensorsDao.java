@@ -12,7 +12,7 @@
 
  **/
 
-package inm7.Jutrack.jutrack_Social.ActiveMonitoring;
+package inm7.Jutrack.jutrack_Social.ActiveLabeling;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
@@ -20,8 +20,6 @@ import androidx.room.Insert;
 import androidx.room.Query;
 
 import java.util.List;
-
-import inm7.Jutrack.jutrack_Social.DetectedActivitySensor.DetectedActivitySensor;
 
 @Dao
 public interface ActiveLabelingSensorsDao {

@@ -14,7 +14,7 @@
 package inm7.Jutrack.jutrack_Social;
 
 import inm7.Jutrack.jutrack_Social.AccelerationSensor.AccelerationSensor;
-import inm7.Jutrack.jutrack_Social.ActiveMonitoring.ActiveLabelingSensor;
+import inm7.Jutrack.jutrack_Social.ActiveLabeling.ActiveLabelingSensor;
 import inm7.Jutrack.jutrack_Social.AppUsageStatSensor.AppUsageStatSensor;
 import inm7.Jutrack.jutrack_Social.DetectedActivitySensor.DetectedActivitySensor;
 import inm7.Jutrack.jutrack_Social.GyroscopeSensor.GyroscopeSensor;

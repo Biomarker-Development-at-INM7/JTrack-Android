@@ -11,7 +11,7 @@
  See the License for the specific language governing permissions and limitations under the License.
 
  **/
-package inm7.Jutrack.jutrack_Social.ActiveMonitoring;
+package inm7.Jutrack.jutrack_Social.ActiveLabeling;
 
 import android.os.AsyncTask;
 import android.util.Log;
@@ -20,9 +20,6 @@ import androidx.annotation.NonNull;
 
 import java.util.List;
 import java.util.concurrent.ExecutionException;
-
-import inm7.Jutrack.jutrack_Social.DetectedActivitySensor.DetectedActivitySenorsAppDatabase;
-import inm7.Jutrack.jutrack_Social.DetectedActivitySensor.DetectedActivitySensor;
 
 public class GetActiveLabelingSensorsDataAsyc {
 

@@ -57,9 +57,9 @@ public class SyncAccelerationClass {
 
     OkHttpClient.Builder httpBuilder = new OkHttpClient.Builder();
 
-    //Gson Builder
-    GsonBuilder gsonBuilder = new GsonBuilder();
-    Gson gson = gsonBuilder.create();
+//    //Gson Builder
+//    GsonBuilder gsonBuilder = new GsonBuilder();
+//    Gson gson = gsonBuilder.create();
 
 
 
@@ -67,24 +67,33 @@ public class SyncAccelerationClass {
      * injection of interceptors to handle encryption and decryption
      */
 
-    //Encryption Interceptor
-    GzipInterceptor gzipInterceptor = new GzipInterceptor();
+//    //Encryption Interceptor
+//    GzipInterceptor gzipInterceptor = new GzipInterceptor();
+//
+//    // OkHttpClient. Be conscious with the order
+//    OkHttpClient okHttpClient = new OkHttpClient()
+//            .newBuilder()
+//            //httpLogging interceptor for logging network requests
+//            .addInterceptor(gzipInterceptor)
+//            .build();
 
-    // OkHttpClient. Be conscious with the order
-    OkHttpClient okHttpClient = new OkHttpClient()
-            .newBuilder()
-            //httpLogging interceptor for logging network requests
-            .addInterceptor(gzipInterceptor)
-            .build();
 
+//    // added after room integration
+//    Retrofit retrofit = new Retrofit.Builder()
+//            .client(okHttpClient)
+//            .baseUrl(Constants.serveraddress)
+//            .addConverterFactory(GsonConverterFactory.create())
+//            .build();
+//    Serverinterface serverinterface = retrofit.create(Serverinterface.class);
 
     // added after room integration
     Retrofit retrofit = new Retrofit.Builder()
-            .client(okHttpClient)
             .baseUrl(Constants.serveraddress)
             .addConverterFactory(GsonConverterFactory.create())
             .build();
     Serverinterface serverinterface = retrofit.create(Serverinterface.class);
+
+
 
 //    public SharedPreferences lastsyncvalue= PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 //    public SharedPreferences.Editor lastsyncvalueeditor=lastsyncvalue.edit();

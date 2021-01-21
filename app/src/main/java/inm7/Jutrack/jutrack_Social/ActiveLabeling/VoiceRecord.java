@@ -11,22 +11,13 @@
  See the License for the specific language governing permissions and limitations under the License.
 
  **/
-package inm7.Jutrack.jutrack_Social.ActiveMonitoring;
+package inm7.Jutrack.jutrack_Social.ActiveLabeling;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
 import android.media.MediaRecorder;
 import android.os.Environment;
-import android.widget.Toast;
-
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
 import java.io.File;
 import java.io.IOException;
-
-import static android.Manifest.permission.RECORD_AUDIO;
-import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
 
 public class VoiceRecord {

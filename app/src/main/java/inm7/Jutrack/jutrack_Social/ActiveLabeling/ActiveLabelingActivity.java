@@ -11,9 +11,8 @@
  See the License for the specific language governing permissions and limitations under the License.
 
  **/
-package inm7.Jutrack.jutrack_Social.ActiveMonitoring;
+package inm7.Jutrack.jutrack_Social.ActiveLabeling;
 
-import android.Manifest;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
@@ -30,7 +29,6 @@ import androidx.core.content.ContextCompat;
 
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -52,7 +50,7 @@ import java.util.concurrent.TimeUnit;
 import static android.Manifest.permission.RECORD_AUDIO;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
-public class ActiveMonitoringActivity extends AppCompatActivity implements View.OnClickListener {
+public class ActiveLabelingActivity extends AppCompatActivity implements View.OnClickListener {
 
     private long timeCountInMilliSeconds = 0;
 
@@ -250,7 +248,7 @@ public class ActiveMonitoringActivity extends AppCompatActivity implements View.
                 voiceRecord.stop_record();
             }
 
-            if (false==false)
+            if (!PreferenceManager.getDefaultSharedPreferences(this).getBoolean("manual_ActiveLabeling_switch",false))
             {
                 myGlobalClass.startMainService("STOP_by_Active_Labeling");
 
@@ -272,7 +270,7 @@ public class ActiveMonitoringActivity extends AppCompatActivity implements View.
             // save to db
             ActiveLabelingSensor sensor = new ActiveLabelingSensor();
 
-            sensor.setSensorname("Active Labeling");
+            sensor.setSensorname("Active_Labeling");
             sensor.setTimestamp(System.currentTimeMillis());
             sensor.setDeviceid(deviceid);
             sensor.setUsername(username);
@@ -352,7 +350,7 @@ public class ActiveMonitoringActivity extends AppCompatActivity implements View.
                 // to save time
                 getTimeofTask(System.currentTimeMillis(),0);
 
-                if (false==false)
+                if (!PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).getBoolean("manual_ActiveLabeling_switch",false))
                 {
                     myGlobalClass.startMainService("STOP_by_Active_Labeling");
 
@@ -530,7 +528,7 @@ public class ActiveMonitoringActivity extends AppCompatActivity implements View.
         return result == PackageManager.PERMISSION_GRANTED && result1 == PackageManager.PERMISSION_GRANTED;
     }
     private void RequestPermissions() {
-        ActivityCompat.requestPermissions(ActiveMonitoringActivity.this, new String[]{RECORD_AUDIO, WRITE_EXTERNAL_STORAGE}, REQUEST_AUDIO_PERMISSION_CODE);
+        ActivityCompat.requestPermissions(ActiveLabelingActivity.this, new String[]{RECORD_AUDIO, WRITE_EXTERNAL_STORAGE}, REQUEST_AUDIO_PERMISSION_CODE);
     }
 
 

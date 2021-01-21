@@ -22,7 +22,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.location.LocationManager;
 import android.os.Bundle;
@@ -39,7 +38,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import inm7.Jutrack.jutrack_Social.ActiveMonitoring.ActiveMonitoringActivity;
+import inm7.Jutrack.jutrack_Social.ActiveLabeling.ActiveLabelingActivity;
 import inm7.Jutrack.jutrack_Social.AppSetting.SettingsActivity;
 import inm7.Jutrack.jutrack_Social.OnBoarding.OnBoardingActivity;
 import inm7.Jutrack.jutrack_Social.OnBoarding.PhoneModel_Utile;
@@ -194,7 +193,7 @@ public class MainActivity extends AppCompatActivity implements YesOrNoAlertDialo
         }
 
         if (id == R.id.active_monitoring) {
-            startActivity(new Intent(MainActivity.this, ActiveMonitoringActivity.class));
+            startActivity(new Intent(MainActivity.this, ActiveLabelingActivity.class));
 
         }
 

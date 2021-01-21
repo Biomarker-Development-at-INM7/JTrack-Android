@@ -11,7 +11,7 @@
  See the License for the specific language governing permissions and limitations under the License.
 
  **/
-package inm7.Jutrack.jutrack_Social.ActiveMonitoring;
+package inm7.Jutrack.jutrack_Social.ActiveLabeling;
 
 import android.content.Context;
 
@@ -20,8 +20,6 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 import inm7.Jutrack.jutrack_Social.Constants;
-import inm7.Jutrack.jutrack_Social.DetectedActivitySensor.DetectedActivitySensor;
-import inm7.Jutrack.jutrack_Social.DetectedActivitySensor.DetectedActivitySensorsDao;
 
 @Database(entities = {ActiveLabelingSensor.class},version = 1)
 public abstract class ActiveLabelingSenorsAppDatabase extends RoomDatabase {
