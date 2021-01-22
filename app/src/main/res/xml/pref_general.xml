@@ -38,7 +38,7 @@
             android:title="Automatischer Neustart-Dienst?" />
 
         <SwitchPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="manual_ActiveLabeling_switch"
             android:summary="@string/pref_description_Manual_ActiveLabeling"
             android:title="Manual Active Labeling?" />

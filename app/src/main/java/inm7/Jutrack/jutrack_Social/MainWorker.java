@@ -126,7 +126,12 @@ public class MainWorker extends Worker {
         if ( (sync_Time_diff_appUsage>Constants.One_Day) | (sync_Time_diff_detectedActivity>Constants.One_Day) | (sync_Time_diff_location>Constants.One_Day) )
         {
 
-            myGlobalClass.startMainService("START");
+            // check if manual active labeling is not active then start services.
+            if (!PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).getBoolean("manual_ActiveLabeling_switch",false))
+            {
+                myGlobalClass.startMainService("START");
+            }
+
 
             // KEEP THIS FOR FUTURE
             //This is to check if the last sync time is > 3 days, remind user to restart application for any possible problem

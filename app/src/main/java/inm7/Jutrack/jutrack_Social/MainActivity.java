@@ -289,6 +289,7 @@ public class MainActivity extends AppCompatActivity implements YesOrNoAlertDialo
 
             }
 
+            // if active labeling with manual mode is not selected then start the service every time main activity opened
             if (!PreferenceManager.getDefaultSharedPreferences(this).getBoolean("manual_ActiveLabeling_switch",false))
             {
                 startService();

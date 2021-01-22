@@ -303,11 +303,10 @@ public class QrCodeScanerActivity extends AppCompatActivity  {
 
                     }
 
-             //TODO check from server
                     editor.putBoolean("manual_ActiveLabeling_switch",true).apply();
 
 
-                        editor.putBoolean("restartSensorService_switch",true).apply();
+                    editor.putBoolean("restartSensorService_switch",true).apply();
                     editor.putString("example_list",response.body().getFreq().concat("00")).apply();
                     editor.putInt("study_Duration_days",Integer.parseInt(  response.body().getStudy_duration() ) ).apply(); //by default its 30 days
                     editor.putLong("patient_Time_Joined",System.currentTimeMillis()).apply();

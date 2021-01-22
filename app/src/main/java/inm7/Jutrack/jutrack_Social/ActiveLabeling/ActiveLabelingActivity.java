@@ -187,7 +187,7 @@ public class ActiveLabelingActivity extends AppCompatActivity implements View.On
 
                 // start services if manual mode is enabled for active labeling
 
-                if (true==true)
+                if (PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).getBoolean("manual_ActiveLabeling_switch",false))
                 {
                     myGlobalClass.startMainService("START");
                 }
@@ -248,7 +248,7 @@ public class ActiveLabelingActivity extends AppCompatActivity implements View.On
                 voiceRecord.stop_record();
             }
 
-            if (!PreferenceManager.getDefaultSharedPreferences(this).getBoolean("manual_ActiveLabeling_switch",false))
+            if (PreferenceManager.getDefaultSharedPreferences(this).getBoolean("manual_ActiveLabeling_switch",false))
             {
                 myGlobalClass.startMainService("STOP_by_Active_Labeling");
 
@@ -270,7 +270,7 @@ public class ActiveLabelingActivity extends AppCompatActivity implements View.On
             // save to db
             ActiveLabelingSensor sensor = new ActiveLabelingSensor();
 
-            sensor.setSensorname("Active_Labeling");
+            sensor.setSensorname("active_labeling");
             sensor.setTimestamp(System.currentTimeMillis());
             sensor.setDeviceid(deviceid);
             sensor.setUsername(username);
@@ -350,7 +350,7 @@ public class ActiveLabelingActivity extends AppCompatActivity implements View.On
                 // to save time
                 getTimeofTask(System.currentTimeMillis(),0);
 
-                if (!PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).getBoolean("manual_ActiveLabeling_switch",false))
+                if (PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).getBoolean("manual_ActiveLabeling_switch",false))
                 {
                     myGlobalClass.startMainService("STOP_by_Active_Labeling");
 
