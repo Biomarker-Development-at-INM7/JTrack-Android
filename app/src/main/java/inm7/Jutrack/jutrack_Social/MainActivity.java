@@ -305,20 +305,47 @@ public class MainActivity extends AppCompatActivity implements YesOrNoAlertDialo
     public static final int RequestPermissionCode = 1;
 
     public boolean checkPermissionAll() {
-        int FifthPermissionResult=0;
-        AppOpsManager appOps = (AppOpsManager) this.getSystemService(Context.APP_OPS_SERVICE);
-        int FirstPermissionResult = ContextCompat.checkSelfPermission(getApplicationContext(), CAMERA);
-        int SecondPermissionResult = ContextCompat.checkSelfPermission(getApplicationContext(),ACCESS_FINE_LOCATION);
-        int ThirdPermissionResult = ContextCompat.checkSelfPermission(getApplicationContext(),ACCESS_COARSE_LOCATION);
-        int ForthPermissionResult =appOps.checkOpNoThrow("android:get_usage_stats", android.os.Process.myUid(), this.getPackageName());
 
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q)
+        int FifthPermissionResult=0;
+        int ForthPermissionResult =0;
+        int SecondPermissionResult=0;
+        int ThirdPermissionResult=0;
+
+
+        if ( PreferenceManager.getDefaultSharedPreferences(this).getBoolean("switch_preference_AppUsage",false))
         {
-             FifthPermissionResult=ContextCompat.checkSelfPermission(getApplicationContext(), ACTIVITY_RECOGNITION);
+            AppOpsManager appOps = (AppOpsManager) this.getSystemService(Context.APP_OPS_SERVICE);
+             ForthPermissionResult =appOps.checkOpNoThrow("android:get_usage_stats", android.os.Process.myUid(), this.getPackageName());
 
         }else
         {
-             FifthPermissionResult=0;
+             ForthPermissionResult =0;
+        }
+        int FirstPermissionResult = ContextCompat.checkSelfPermission(getApplicationContext(), CAMERA);
+
+        if ( PreferenceManager.getDefaultSharedPreferences(this).getBoolean("switch_preference_Location",false)) {
+             SecondPermissionResult = ContextCompat.checkSelfPermission(getApplicationContext(), ACCESS_FINE_LOCATION);
+             ThirdPermissionResult = ContextCompat.checkSelfPermission(getApplicationContext(), ACCESS_COARSE_LOCATION);
+        }
+        else
+        {
+        SecondPermissionResult=0;
+        ThirdPermissionResult=0;
+        }
+
+
+        if ( PreferenceManager.getDefaultSharedPreferences(this).getBoolean("switch_preference_ActivityDetection",false)) {
+
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
+                FifthPermissionResult = ContextCompat.checkSelfPermission(getApplicationContext(), ACTIVITY_RECOGNITION);
+
+            } else {
+                FifthPermissionResult = 0;
+            }
+
+        }else
+        {
+            FifthPermissionResult = 0;
         }
 
 
@@ -338,8 +365,11 @@ public class MainActivity extends AppCompatActivity implements YesOrNoAlertDialo
     private void requestPermission() {
 
 
+
+
         ActivityCompat.requestPermissions(MainActivity.this, new String[]
                 {
+
                         CAMERA,
                         ACCESS_FINE_LOCATION,
                         ACCESS_COARSE_LOCATION,
