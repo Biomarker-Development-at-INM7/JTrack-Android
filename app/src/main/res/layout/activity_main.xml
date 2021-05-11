@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="inm7.Jutrack.jutrack_Social.MainActivity">
+    tools:context="inm7.JTrack.Jtrack_Social.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -18,9 +18,12 @@
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
+
     </com.google.android.material.appbar.AppBarLayout>
 
+
     <include layout="@layout/content_main" />
+
 
     <!--
     <android.support.design.widget.FloatingActionButton

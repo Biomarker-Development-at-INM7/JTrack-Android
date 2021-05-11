@@ -37,12 +37,14 @@
             android:summary="@string/pref_description_social_recommendations"
             android:title="Automatischer Neustart-Dienst?" />
 
-        <SwitchPreference
-            android:defaultValue="false"
-            android:key="manual_ActiveLabeling_switch"
-            android:summary="@string/pref_description_Manual_ActiveLabeling"
-            android:title="Manual Active Labeling?" />
+<!--        <SwitchPreference-->
+<!--            android:defaultValue="false"-->
+<!--            android:enabled="false"-->
 
+<!--            android:shouldDisableView="true"-->
+<!--            android:summary="@string/pref_description_Manual_ActiveLabeling"-->
+<!--            android:title="Manual Active Labeling?" />-->
+<!--&lt;!&ndash;        android:key="manual_ActiveLabeling_switch"&ndash;&gt;-->
 
         <SwitchPreference
             android:defaultValue="false"

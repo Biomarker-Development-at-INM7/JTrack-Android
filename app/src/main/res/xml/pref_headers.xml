@@ -3,7 +3,7 @@
     <!-- These settings headers are only used on tablets. -->
 
     <header
-        android:fragment="inm7.Jutrack.jutrack_Social.AppSetting.SettingsActivity$GeneralPreferenceFragment"
+        android:fragment="inm7.JTrack.Jtrack_Social.AppSetting.SettingsActivity$GeneralPreferenceFragment"
         android:icon="@drawable/ic_info_black_24dp"
         android:title="@string/pref_header_general" />
 

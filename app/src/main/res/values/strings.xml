@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">JuTrack Social</string>
+    <string name="app_name">JTrack Social</string>
     <string name="title_activity_settings">Einstellungen</string>
 
     <!-- Strings related to Settings -->
@@ -104,21 +104,21 @@
 
     // notification
     <string name="noti_channel_default">Primary Channel</string>
-    <string name="mainServiceNotificationText">Die App Jutrack läuft im Hintergrund </string>
-    <string name="BackgroundNotificationText">Der Aufzeichnungsservice für Jutrack läuft im Hintergrund</string>
+    <string name="mainServiceNotificationText">Die App Jtrack läuft im Hintergrund </string>
+    <string name="BackgroundNotificationText">Der Aufzeichnungsservice für Jtrack läuft im Hintergrund</string>
 
 
 
     <!-- OnBoard Screen. -->
 
-    <string name="ob_header1">Willkommen zu JuTrack Social</string>
-    <string name="ob_header2">Willkommen zu JuTrack Social</string>
-    <string name="ob_header3">Willkommen zu JuTrack Social</string>
+    <string name="ob_header1">Willkommen zu JTrack Social</string>
+    <string name="ob_header2">Willkommen zu JTrack Social</string>
+    <string name="ob_header3">Willkommen zu JTrack Social</string>
     <string name="ob_get_started">An Einer Studie Teilnehmen</string>
 
     <string name="ob_desc1"></string>
-    <string name="ob_desc2">Willkommen zu JuTrack SocialL</string>
-    <string name="ob_desc3">Willkommen zu JuTrack Social</string>
+    <string name="ob_desc2">Willkommen zu JTrack Social</string>
+    <string name="ob_desc3">Willkommen zu JTrack Social</string>
 
 
 
@@ -161,9 +161,9 @@
     <string name="Manual_Sync_Ok">Datenbank ist synchronisiert </string>
     <string name="Manual_Sync_Error">Datenbank ist synchronisiert </string>
     <string name="Permissions_check_Ok">Genehmigungen: Erfolg  </string>
-    <string name="Permissions_check_Error">bitte erlauben Sie Jutrack Zugang zu Nutzungsinformationen</string>
+    <string name="Permissions_check_Error">bitte erlauben Sie Jtrack Zugang zu Nutzungsinformationen</string>
     <string name="Protected_Apps_title"> Überspringen der Batterie-Optimierung</string>
-    <string name="Protected_Apps_msg"> Bitte schalten Sie die Batterieoptimierung für Jutrack auf manuell</string>
+    <string name="Protected_Apps_msg"> Bitte schalten Sie die Batterieoptimierung für Jtrack auf manuell</string>
     <string name="Protected_Apps_btn"> Gehe zu Einstellung</string>
     <string name="User_Exist_Error">Dieser Benutzer existiert bereits, versuchen Sie es mit neuem Qr-Code. </string>
     <string name="User_Server_Error">Es gibt ein Problem Bitte versuchen Sie es erneut.</string>
@@ -180,6 +180,13 @@
 
     <string name="Activity_rservice_Start">Aktivitätserkennungsdienst gestartet</string>
     <string name="Activity_rservice_Stopped">Aktivitätserkennungsdienst eingestellt</string>
+
+    <string name="alert_error_activeLabelling_title">Aufmerksam </string>
+    <string name="alert_error_activeLabelling_body">Sie haben keinen Zugriff auf dieses Modul </string>
+
+
+    <string name="alert_restartApp_title">Anfrage zum Neustart der App </string>
+    <string name="alert_restartApp_body">Klicken Sie bitten hier um die Anwendung JTrack neuzustarten  </string>
 
 
 

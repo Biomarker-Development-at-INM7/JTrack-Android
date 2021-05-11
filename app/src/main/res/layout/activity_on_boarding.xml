@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="inm7.Jutrack.jutrack_Social.OnBoarding.OnBoardingActivity">
+    tools:context="inm7.JTrack.Jtrack_Social.OnBoarding.OnBoardingActivity">
 
 
     <androidx.viewpager.widget.ViewPager

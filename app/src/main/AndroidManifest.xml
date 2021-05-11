@@ -1,42 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="inm7.Jutrack.jutrack_Social">
+    package="inm7.JTrack.Jtrack_Social">
 
     <application
-        android:name=".MyApplication"
+        android:name="inm7.JTrack.Jtrack_Social.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+
+
+        >
         <activity
-            android:name=".AboutActivity"
+            android:name="inm7.JTrack.Jtrack_Social.AboutActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity"></activity>
 
         <activity
-            android:name=".OnBoarding.QrCodeScanerActivity"
+            android:name="inm7.JTrack.Jtrack_Social.OnBoarding.QrCodeScanerActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".ActiveLabeling.ActiveLabelingActivity"
+            android:name="inm7.JTrack.Jtrack_Social.ActiveLabeling.ActiveLabelingActivity"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity" />
+            tools:ignore="LockedOrientationActivity"
+            android:parentActivityName=".MainActivity"/>
         <activity
-            android:name=".AppSetting.SettingsActivity"
+            android:name="inm7.JTrack.Jtrack_Social.AppSetting.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="inm7.JTrack.Jtrack_Social.MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="inm7.Jutrack.jutrack_Social.MainActivity" />
+                android:value="inm7.JTrack.Jtrack_Social.MainActivity" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="inm7.JTrack.Jtrack_Social.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
@@ -48,65 +52,67 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".OnBoarding.OnBoardingActivity"
+            android:name="inm7.JTrack.Jtrack_Social.OnBoarding.OnBoardingActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             tools:ignore="LockedOrientationActivity" />
 
 
         <receiver
-            android:name=".BroadCastReciever.SensorBroadcastReceiver"
+            android:name="inm7.JTrack.Jtrack_Social.BroadCastReciever.SensorBroadcastReceiver"
             android:enabled="true"
             android:exported="true"
             android:label="RestartServiceWhenStopped" />
 
-        <receiver android:name=".BroadCastReciever.BootBroadCastReceiver">
+        <receiver android:name="inm7.JTrack.Jtrack_Social.BroadCastReciever.BootBroadCastReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.QUICKBOOT_POWERON" />
             </intent-filter>
         </receiver>
 
-        <service android:name=".GyroscopeSensor.GyroscopeService"
+
+
+        <service android:name="inm7.JTrack.Jtrack_Social.GyroscopeSensor.GyroscopeService"
             android:enabled="true"
             android:exported="true"
             />
 
-        <service android:name=".AccelerationSensor.AccelerationService"
+        <service android:name="inm7.JTrack.Jtrack_Social.AccelerationSensor.AccelerationService"
             android:enabled="true"
             android:exported="true"
             />
 
 
-        <service android:name=".LocationSensor.LocationUpdatesService"
+        <service android:name="inm7.JTrack.Jtrack_Social.LocationSensor.LocationUpdatesService"
             android:foregroundServiceType="location"
              android:enabled="true"
             android:exported="true"
            />
 
         <service
-            android:name=".OnBoarding.FirebaseNotificationService"
+            android:name="inm7.JTrack.Jtrack_Social.OnBoarding.FirebaseNotificationService"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".MainService" />
+        <service android:name="inm7.JTrack.Jtrack_Social.MainService" />
         <service
-            android:name=".DetectedActivitySensor.BackgroundDetectedActivitiesService"
+            android:name="inm7.JTrack.Jtrack_Social.DetectedActivitySensor.BackgroundDetectedActivitiesService"
             android:enabled="true"
             android:exported="true" />
 
         <service
-            android:name=".DetectedActivitySensor.DetectedActivitiesIntentService"
+            android:name="inm7.JTrack.Jtrack_Social.DetectedActivitySensor.DetectedActivitiesIntentService"
             android:exported="false" />
-        <service android:name=".LocationSensor.LocationService" />
+        <service android:name="inm7.JTrack.Jtrack_Social.LocationSensor.LocationService" />
 <!--        <service android:name=".LocationSensor.LocationServiceGoogeAPI">-->
 <!--            -->
 <!--        </service>-->
     </application>
-    <uses-feature android:name="android.hardware.camera" />
 
+    <uses-feature android:name="android.hardware.camera" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -124,7 +130,7 @@
         tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.CAMERA" />
 
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
 
 
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
@@ -135,5 +141,7 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.STORAGE"/>
+<!--    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>

@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Aktivität eingeben"
-        android:textColor="#00BCD4" />
+        android:textColor="#00BCD4"
+        />
 
     <EditText
         android:id="@+id/dialog_durationTxt"

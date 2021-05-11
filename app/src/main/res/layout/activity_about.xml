@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="inm7.Jutrack.jutrack_Social.AboutActivity">
-
+    tools:context="inm7.JTrack.Jtrack_Social.AboutActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@+id/textInfoLayout"
@@ -20,33 +22,87 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
 
-            android:id="@+id/versionTXT"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Version:2.2.0"
-            android:textSize="@dimen/info_text" />
+            <TextView
 
+                android:id="@+id/versionTXT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Version:2.2.0"
+                android:layout_marginBottom="14dp"
+                android:textSize="@dimen/info_text" />
 
         <TextView
             android:id="@+id/about_txt"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scrollbars="vertical"
-            android:text="Die App „JuTrack Social“ sammelt im Verlauf von klinischen Studien vollkommen anonymisierte Daten zu der Benutzung Ihres Smartphones im Alltag (Anzahl und Dauer von Anrufen und Mitteilungen, Art und Menge von Bewegungsaktivitäten, Appnutzungsverhalten). Diese Daten sollen dabei helfen objektive und zuverlässige Früherkennungszeichen für die Entwicklung und Verlaufsbeobachtung von Depressionen zu identifizieren."
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:text="Im Rahmen klinischer Studien sammelt die App „JTrack Social“ vollständig anonyme Daten zur Nutzung Ihres Smartphones im Alltag (Anzahl und Dauer von Anrufen und Nachrichten, Art und Umfang der körperlichen Aktivität, Nutzungsverhalten der App). Diese Daten sollten dazu beitragen, objektive und zuverlässige Frühwarnzeichen für die Entwicklung und das Follow-up von Depressionen zu identifizieren. \n"
             android:textAlignment="viewStart"
             android:textSize="@dimen/info_text" />
 
         <TextView
-            android:id="@+id/studyInfo_txt"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="link to page"
+            android:layout_marginBottom="14dp"
+            android:text="Bei der Studie werden durch die App „JTrack Social“ folgende Arten von Daten erfasst:"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/info_text"
+            android:textStyle="bold" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="1.Die Anzahl und Dauer von Telefonanrufen und die Anzahl von Mittelungen: diese Daten helfen uns dabei den mit Depression assoziierten Rückzug an sozialer Interaktion besser zu erfassen. Es werden dabei in keinem Fall sensitive Informationen wie Telefonnummern, Namen der Sender oder Empfänger oder Inhalte der entsprechenden Kommunikationen erfasst. \n"
             android:textSize="@dimen/info_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="2.Bewegungsaktivitäten: dabei wird mit Hilfe von GPS die relative Position über die Zeit gesammelt, also zum Beispiel wie viele unterschiedliche Orte Sie pro Tag aufsuchen. Diese Daten erlauben es uns zu erfassen,  wie und wieviel Sie sich im alltäglichen Verlauf bewegen und somit Bewegungsmuster, die mit der Entwicklung von Depressionen zusammenhängen, besser zu erkennen. Es werden dabei keine identifizierbaren Informationen, wie z.B. die Aufenthaltsorte oder Umgebungsinformationen, erfasst. \n"
+            android:textSize="@dimen/info_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="3.Aktivitätserkennung: die App erkennt automatisch die mit dem Smartphone erfassten Bewegungen aus den folgenden Kategorien: Autofahren, Fahrradfahren, Laufen, Gehen, Stillstehen, Telefon in der Hand halten. Diese Informationen helfen uns dabei die mit der Depression assoziierten Veränderungen in Verhaltensmustern (z.B. reduzierte Sportaktivitäten) besser zu erfassen. Die App sammelt dabei nur anonymisierte Daten bzgl. der Zeitpunkte und der Dauer der obigen Aktivitätskategorien. \n"
+            android:textSize="@dimen/info_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="4. Applikationsnutzung: dabei werden Informationen über die Dauer und den Namen der verwendeten Applikationen gesammelt (z.B. facebook, whatsapp, Nachrichten, Browser). Es werden jedoch in keinem Fall die Inhalte dieser Interaktionen erfasst. Diese Daten sollen uns dabei helfen zu verstehen, wie sich die Benutzung des Smartphones im Verlauf einer Depression verändert. \n "
+            android:textSize="@dimen/info_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="5. Kamera: Die Kamera wird dazu verwendet, um den QR-Code (der auf dem Papier ausgedruckt ist) während des Installationsprozesses einzuscannen. Dies ist notwendig für die Registrierung in der Studie. Die Kamera wird nur einmal und nur zu diesem Zweck verwendet. Die Kamera hat keinen Zugang zu der Bildergalerie und speichert keine Daten. \n"
+            android:textSize="@dimen/info_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text=" 6. Bewegungssensoren: Bewegungssensoren werden dazu verwendet, um aktive von inaktiven Phasen zu unterscheiden. Diese Informationen werden in dieser Studie nicht erfasst, sondern dienen nur dazu die Batterie und Speichernutzung zu optimieren. In den inaktiven Phasen sammelt die Applikation keine Daten. Es werden in dieser Studie keine Bewegungssensordaten gespeichert. \n"
+            android:textSize="@dimen/info_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7. Audio: Audiodaten werden nur für den aktiven Markierungszeitraum aufgezeichnet, der während der Jobbeschreibung definiert wurde. Anonymisierung: Audiodaten werden nur aufgezeichnet, wenn sie ausgewählt und mit den erforderlichen Berechtigungen versehen wurden, und die Aufnahmezeit ist auf die definierte Zeit begrenzt. Die gesammelten Datensätze sind nicht mit anderen identifizierenden Informationen versehen."
+            android:textSize="@dimen/info_text"
+            android:layout_marginBottom="12dp"
+            />
     </LinearLayout>
 
-
+    </androidx.core.widget.NestedScrollView>
 
 
 

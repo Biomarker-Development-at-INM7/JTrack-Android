@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="inm7.Jutrack.jutrack_Social.MainActivity"
+    tools:context="inm7.JTrack.Jtrack_Social.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <!--
@@ -119,5 +119,27 @@
         </LinearLayout>
         -->
 
+    <LinearLayout
+        android:id="@+id/leaveStudyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <Button
+            android:id="@+id/start_BTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:text="Aufzeichnen"
+            android:textSize="@dimen/button_text" />
+
+
+    </LinearLayout>
     </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
 
