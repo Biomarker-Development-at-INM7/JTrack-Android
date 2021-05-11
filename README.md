@@ -17,7 +17,7 @@ JTrack can collect the aforementioned data type in Passive (without user interac
 
 *release in preparation
 
-![JTrack Platform Overview](https://jutrack-docs.readthedocs.io/en/latest/_images/JuTrack.png)
+
 
 ## Documents
 
