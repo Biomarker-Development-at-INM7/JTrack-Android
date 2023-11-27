@@ -1,8 +1,8 @@
-﻿# Welcome to JTrack Platfrom!
+﻿# Welcome to JTrack Platform!
 
 
 
-Hi! This is the repository for JTrack smartphone application. JTrack is an open-source platform for remote assessment of digital biomarkers (DB) in neurological, psychiatric and other indications. JTrack platform consists of an **Android application** and an online **Dashboard** for managing research studies.
+Hi! This is the repository for the JTrack smartphone application. JTrack is an open-source platform for remote assessment of digital biomarkers (DB) in neurological, psychiatric, and other indications. JTrack platform consists of an **Android application** and an online **Dashboard** for managing research studies.
 
 JTrack application comprises the following main categories of components:
 
@@ -13,7 +13,7 @@ JTrack application comprises the following main categories of components:
 - Gyroscope Sensor data
 - Voice data * (only in Active assessment)  
 
-JTrack can collect the aforementioned data type in Passive (without user interaction) mode and labelling the collected data in Active (by user interaction) mode. All components are designed in a modular architecture which can be easily added or excluded.
+JTrack can collect the aforementioned data type in Passive (without user interaction) mode and label the collected data in Active (by user interaction) mode. All components are designed in a modular architecture which can be easily added or excluded.
 
 *release in preparation
 
@@ -21,10 +21,10 @@ JTrack can collect the aforementioned data type in Passive (without user interac
 
 ## Documents
 
-For installation instruction and details please visit [https://jutrack-docs.readthedocs.io/en/latest/](https://jutrack-docs.readthedocs.io/en/latest/)
+For installation instructions and details please visit [https://jutrack-docs.readthedocs.io/en/latest/](https://jtrack.readthedocs.io/en/latest/)
 
 ## Contributing 
-JTrack is developed as an open source solution (release in preparation, Sahandi-Far et al.). It is currently deployed in several clinical and mobile health studies. If you are interested in collaboration with us or would like to learn more about JTrack or our studies please reach out to Dr. Juergen Dukart (j.dukart@fz-juelich.de).
+JTrack is developed as an open-source solution (release in preparation, Sahandi-Far et al.). It is currently deployed in several clinical and mobile health studies. If you are interested in collaborating with us or would like to learn more about JTrack or our studies please reach out to Dr. Juergen Dukart (j.dukart@fz-juelich.de).
 
 You can find more information about our group on:  [https://www.fz-juelich.de/inm/inm-7/EN/Forschung/Biomarker%20Development/_node.html](https://www.fz-juelich.de/inm/inm-7/EN/Forschung/Biomarker%20Development/_node.html)
 
