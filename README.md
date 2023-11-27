@@ -21,7 +21,7 @@ JTrack can collect the aforementioned data type in Passive (without user interac
 
 ## Documents
 
-For installation instructions and details please visit [https://jutrack-docs.readthedocs.io/en/latest/](https://jtrack.readthedocs.io/en/latest/)
+For installation instructions and details please visit [https://jtrack-docs.readthedocs.io/en/latest/](https://jtrack.readthedocs.io/en/latest/)
 
 ## Contributing 
 JTrack is developed as an open-source solution (release in preparation, Sahandi-Far et al.). It is currently deployed in several clinical and mobile health studies. If you are interested in collaborating with us or would like to learn more about JTrack or our studies please reach out to Dr. Juergen Dukart (j.dukart@fz-juelich.de).
